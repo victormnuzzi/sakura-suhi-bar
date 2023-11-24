@@ -1,0 +1,161 @@
+/* --------------------- Home --------------------- */
+
+
+/* ------------ Slide Show ------------ */
+
+.sectionSlideShow {
+    width: 100%;
+}
+
+.slideContainer {
+    position: relative;
+}
+
+.slideItem{
+    width: 100%;
+    height: calc(100vh - 100px);
+    object-fit: cover;
+    filter: blur(3px);
+}
+
+.slideContentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.slideTittle {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5em;
+    color: var(--cor-secundaria);
+}
+
+.slideText {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3em;
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.slideBtn {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 20px;
+    text-decoration: none;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border-radius: 20px;
+    border: 2px solid var(--cor-primaria);
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    transition: .7s;
+    cursor: pointer;
+}
+
+.slideBtn:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    border-color: var(--cor-terciaria);
+}
+
+
+/* ------------ Cards ------------ */
+
+.sectionMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--light-gray);
+}
+
+/* Cards Text */
+
+.menuTittle {
+    color: var(--cor-primaria);
+    font-size: 3em;
+}
+
+.menuTittleDescription {
+    width: 58%;
+    text-align: center;
+    font-size: 1.15em;
+    line-height: 1.3em;
+}
+
+/* Grid Cards */
+
+.cardsColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.cardsContainer {
+    width: 100%;
+    min-height: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Individual card */
+.cardContainer {
+    display: flex;
+    width: 700px;
+    height: 300px;
+    padding: 4%;
+    gap: 24px;
+    background-color: var(--cor-secundaria);
+    border-radius: 14px;
+    border: 2px solid #ddd;
+}
+
+.imgContainer {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.imgContainer img {
+    height: 100%;
+    width: 100%;
+    border-radius: 14px;
+}
+
+.textContainer {
+    width: 50%;
+    height: 100%;
+    color: var(--cor-terciaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tittle {
+    color: var(--cor-terciaria);
+    font-size: 1.8em;
+} 
+
+.description {
+    color: var(--cor-terciaria);
+    font-size: 1.1em;
+}
+
+.price {
+    color: var(--cor-primaria);
+    font-size: 1.2em;
+    font-weight: bold;
+}

@@ -1,0 +1,212 @@
+:root {
+    --cor-primaria: #d3502c;
+    --cor-secundaria: #FFFFFF;
+    --cor-terciaria: #232323;
+    --light-gray: #f7f7f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Error Page */
+.errorPage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+/* Base Section */
+
+.sectionContainer {
+    width: 100%;
+    padding: 4% 6%;
+    background-color: var(--light-gray);
+}
+
+/* -------------------------- Login --------------------------- */
+
+.loginContainer {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+
+
+/* -------------------------- Tables --------------------------- */
+
+.produtoPedidoContainer {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.produtoPedidoContainer h1 {
+    color: var(--cor-terciaria);
+    font-size: 2.6em;
+}
+
+.produtoPedidoContainer td {
+    text-align: center;
+}
+
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 40px 20px;
+    border: 1px solid #3c3c3d;
+    box-shadow: 3px 3px 5px #888888;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: var(--cor-secundaria);
+}
+
+table th {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.tableIcon {
+    color: var(--cor-primaria);
+    transition: .3s;
+}
+
+.tableIcon:hover {
+    color: var(--cor-terciaria);
+}
+
+
+.btnSubmit {
+    padding: 10px 20px;
+    border-radius: 22px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-size: 1.4em;
+    transition: .7s;
+    letter-spacing: 1px;
+    border: 3px solid var(--cor-primaria);
+}
+
+.btnSubmit:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid var(--cor-terciaria);
+    color: var(--cor-terciaria);
+}
+
+
+/* ----------------------- FORM ----------------------- */
+
+
+.formContainer {
+    background-color: var(--cor-secundaria);
+    width: 560px;
+    margin-bottom: 30px;
+}
+
+.formGroup {
+    width: 100%;
+}
+
+.formTittle {
+    font-size: 2.6em;
+}
+
+.formGroup label, .loginLabel {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    gap: 24px;
+    border: 1px solid #3c3c3d;
+    box-shadow: 3px 3px 5px #888888;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10%;
+}
+
+input {
+    margin-top: 11px;
+    width: 100%;
+    font-size: 1em;
+    padding: 8px;
+    border: 0px;
+    border-bottom: 1px solid var(--cor-terciaria);
+    outline: none;
+}
+
+fieldset h1 {
+    margin-bottom: 20px;
+}
+
+.btnContainer {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* ----------------------- Excluir Produto ----------------------- */
+
+.excluirContainer {
+    background-color: var(--cor-secundaria);
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    border: 1px solid #3c3c3d;
+    box-shadow: 3px 3px 5px #888888;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.excluirContainer h1 {
+    margin-bottom: 50px;
+}
+
+.excluirTextTittle {
+    font-weight: bold;
+}
+
+.excluirText p {
+    margin-bottom: 40px;
+    font-size: 1.3em;
+    border-bottom: 0.5px solid var(--cor-terciaria);
+    padding-bottom: 18px;
+    width: 100%;
+}
+
+.excluirText {
+    width: 100%;
+}
+
+
+
+
+/* ----------------------- Cadastrar Produto ----------------------- */
+
+
